@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC
+    "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN"
+    "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+    <jdbc-resource pool-name="ArquillianEmbeddedMySQLPool"
+        jndi-name="jdbc/arquillian"/>
+    <jdbc-connection-pool name="ArquillianEmbeddedMySQLPool" 
+    	res-type="javax.sql.DataSource"
+    	datasource-classname="com.mysql.cj.jdbc.MysqlDataSource">
+      <property name="user" value="root"></property>
+	  <property name="password" value="1nt3rm3zz0"></property>
+      <property name="databaseName" value="unit_testing"></property>
+      <property name="serverName" value="localhost"></property>
+      <property name="portNumber" value="3306"></property>
+      <property name="useSSL" value="false"></property>
+      <property name="serverTymezone" value="UTC"></property>
+      <property name="url" value="jdbc:mysql://localhost:3306/unit_testing?useSSL=false&amp;serverTimezone=UTC"></property>
+      
+    </jdbc-connection-pool>
+</resources>

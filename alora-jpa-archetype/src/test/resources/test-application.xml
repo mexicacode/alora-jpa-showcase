@@ -1,0 +1,6 @@
+<application>
+    <display-name>ear</display-name>
+    <module>
+        <ejb>ejb-jar.jar</ejb>
+    </module>
+</application>
