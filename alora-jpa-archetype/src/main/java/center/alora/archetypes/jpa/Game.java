@@ -3,7 +3,11 @@ package center.alora.archetypes.jpa;
 import java.io.Serializable;
 import java.lang.Long;
 import java.lang.String;
+import java.math.BigDecimal;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  * Entity implementation class for Entity: Game
@@ -11,6 +15,8 @@ import javax.persistence.*;
  */
 @Entity
 public class Game implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,7 +25,10 @@ public class Game implements Serializable {
 	private String description;
 	private String clasification;
 	private Float price;
-	private static final long serialVersionUID = 1L;
+	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name="cat_id")
+	private Category category;
+	
 
 	public Game() {
 		super();
@@ -67,6 +76,25 @@ public class Game implements Serializable {
 	}
 	
 	
+	
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
+	@Override
+	public String toString() {
+		return "Game@: [ id: "+this.getId()+
+				" , name: " + this.getName()+ 
+				" , description: " + this.getDescription()+ 
+				" , clasificacion: " + this.getClasification()+ 
+				", price: "+ this.getPrice()+
+				", category: " + this.getCategory()+
+	            "]";
+	}
 	
 	
    

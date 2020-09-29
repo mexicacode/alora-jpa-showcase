@@ -1,0 +1,34 @@
+category: 
+   - id: 1
+     category: "shooter"
+   - id: 2
+     category: "platform"
+   - id: 3
+     category: "puzzle"
+
+game:
+  - id: 1
+    name: "Gear of War"
+    description: "Violencia moderada"
+    clasification: "Adolecentes"
+    price: 450.00
+    cat_id: 1
+  - id: 2
+    name: "Good of War"
+    description: "Violencia moderada"
+    clasification: "Adolecentes"
+    price: 350.00
+    cat_id: 1
+  - id: 3
+    name: "Metal Gear"
+    description: "Violencia moderada"
+    clasification: "Adolecentes"
+    price: 950.00
+    cat_id: 1
+  - id: 4
+    name: "Final Fantasy"
+    description: "Violencia moderada"
+    clasification: "Adolecentes"
+    price: 1250.00
+    cat_id: 1
+    

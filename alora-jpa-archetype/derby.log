@@ -1,10 +1,10 @@
 ----------------------------------------------------------------
-Sun Sep 13 09:32:04 CDT 2020:
- Arrancando Derby versión The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instancia a816c00e-0174-87e1-51c7-00000cecfd58 
-en el directorio de base de datos C:\Users\Mangore\workspace\alora-jpa-archetype\target\databases\derby  con el cargador de clases sun.misc.Launcher$AppClassLoader@7440e464
+Fri Sep 25 13:24:02 CDT 2020:
+ Arrancando Derby versión The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instancia a816c00e-0174-c681-ffcc-000014b8d518 
+en el directorio de base de datos C:\Users\Mangore\git\alora\alora-jpa-archetype\target\databases\derby  con el cargador de clases sun.misc.Launcher$AppClassLoader@19469ea2
 
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_251-b08
-user.dir=C:\Users\Mangore\workspace\alora-jpa-archetype
+user.dir=C:\Users\Mangore\git\alora\alora-jpa-archetype
 derby.system.home=null
 Cargador de clases de base de datos iniciado - derby.database.classpath=''
